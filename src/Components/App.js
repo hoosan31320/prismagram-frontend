@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-
-class App extends Component {
-  render() {
-    return <div className="App" />;
-  }
-}
-
-export default App;
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "../Styles/GlobalStyles";
+import Theme from "../Styles/Theme";
+// eslint-disable-next-line
+export default () => (
+  <ThemeProvider theme={Theme}>
+    <GlobalStyles />
+  </ThemeProvider>
+);
