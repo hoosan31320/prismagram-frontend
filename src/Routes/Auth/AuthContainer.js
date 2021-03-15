@@ -13,10 +13,10 @@ export default () => {
     const lastName = useInput("");
     const secret = useInput("");
     const email = useInput("itno@gmai.com");
+
     const requestSecretMutation = useMutation(LOG_IN, {
         variables: { email: email.value}
     });
-
     const createAccountMutation = useMutation(CREATE_ACCOUNT, {
         variables: {
             email: email.value,
@@ -82,7 +82,7 @@ export default () => {
             lastName={lastName}
             email={email}
             secret={secret}
-            onLogin={onSubmit}
+            onSubmit={onSubmit}
         />
     );
 };
