@@ -7,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
 import Router from "./Router";
-
 import Footer from "./Footer";
 
 const Query = gql`

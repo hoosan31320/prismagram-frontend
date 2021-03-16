@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 
-
 const Wrapper = styled.div`
     min-height: 80vh;
     display: flex;
@@ -49,14 +48,14 @@ const Form = styled(Box)`
 
 // eslint-disable-next-line
 export default ({
-    action,
+    action, 
     username,
     firstName,
     lastName,
     email,
+    secret,
     setAction,
-    onSubmit,
-    secret
+    onSubmit
 }) => (
     <Wrapper>
         <Form>
