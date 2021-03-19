@@ -49,6 +49,13 @@ const PostContainer = ({
         }
     };
 
+    const onKeyPress = e => {
+        const { keyCode } = e;
+        if (keyCode === 13) {
+            comment.setValue("");
+        }
+    }
+
     return (
         <PostPresenter 
             user={user}
@@ -64,6 +71,7 @@ const PostContainer = ({
             newComment={comment}
             currentItem={currentItem}
             toggleLike={toggleLike}
+            onKeyPress={onKeyPress}
         />
     );
 };
